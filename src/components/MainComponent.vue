@@ -3,7 +3,7 @@
     <!-- Карусель -->
     <swiper :options="swiperOptions">
       <swiper-slide v-for="(image, index) in images" :key="index">
-        <img :src="image" alt="Slide" width="300" height="300" />
+        <img :src="image" alt="Slide" width="300" height="200" />
         <div>{{ image }}</div>
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
