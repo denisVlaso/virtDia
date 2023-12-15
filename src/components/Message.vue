@@ -13,7 +13,7 @@
         @input="updateButtonStatus"
       />
       <button @click="saveText" :disabled="isButtonDisabled">
-        добавить запись
+        Отправить сообщение
       </button>
     </div>
   </div>
@@ -69,21 +69,27 @@ export default {
 
 <style scooped>
 .dialog_menu {
-  width: 200%;
   display: grid;
+  font-size: 17px;
   grid-template-rows: 3fr 1fr;
+  width: fit-content;
 }
 .messagesInput {
   border: 1px solid white;
   border-radius: 15px;
   background-color: white;
-  width: min-width;
-  margin: 10px auto 0px 30%;
-  float: right;
+  width: fit-content;
+  margin: 10px 30px 0px auto;
 }
 .input_message {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: max-content;
 }
 .messages {
-  display: block;
+  display: contens;
+  word-break: break-all;
+  min-width: 400px;
 }
 </style>

@@ -1,10 +1,20 @@
 <template>
   <div id="app">
     <Header></Header>
-    <MainComponent></MainComponent>
+    <MainComponent class="mC"></MainComponent>
     <div class="dialog">
-      <People></People>
-      <Message></Message>
+      <div class="section">
+        <p>Контакты</p>
+        <People></People>
+      </div>
+      <div class="section">
+        <p>Сообщения</p>
+        <Message></Message>
+      </div>
+      <div class="section">
+        <p>Новости</p>
+        <News></News>
+      </div>
     </div>
     <div>
       <Footer />
@@ -18,6 +28,7 @@ import Message from "./components/Message.vue";
 import People from "./components/People.vue";
 import Footer from "./components/Footer.vue";
 import MainComponent from "./components/MainComponent.vue";
+import News from "./components/News.vue";
 
 export default {
   name: "App",
@@ -27,6 +38,7 @@ export default {
     People,
     MainComponent,
     Footer,
+    News,
   },
 };
 </script>
@@ -39,7 +51,21 @@ body {
   display: block;
 }
 .dialog {
-  width: 100%;
+  width: auto;
   display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+.mC {
+  margin: 0 auto;
+}
+.section {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+}
+.section > p {
+  margin: 0 auto;
+  font-size: 25px;
 }
 </style>

@@ -1,10 +1,9 @@
 <template>
   <div id="app111">
     <!-- Карусель -->
-    <swiper :options="swiperOptions">
+    <swiper style="" :options="swiperOptions">
       <swiper-slide v-for="(image, index) in images" :key="index">
-        <img :src="image" alt="Slide" width="300" height="200" />
-        <div>{{ image }}</div>
+        <img style="border-radius: 30px" :src="image" alt="Slide" />
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
       <div class="swiper-button-next" slot="button-next"></div>
@@ -43,11 +42,11 @@ export default {
         },
       },
       images: [
-        "https://i.pinimg.com/736x/a2/cf/53/a2cf53cbb6b0a55232de252775b7b534.jpg",
-        "https://free-images.com/or/ad07/a_letter_ah_aha.jpg",
+        "../../public/добавляйте.png",
+        "../../public/общайтесь.png",
+        "../../public/зло.png",
         // Добавьте дополнительные ссылки на изображения по необходимости
       ],
-      todos: ["ААААААААААААААААААААААААААААААААААААААААААААААА"],
     };
   },
 };
@@ -56,8 +55,8 @@ export default {
 <style>
 #app111 {
   display: flex;
-  width: 400px;
-  height: 300px;
+  width: 600px;
+  height: 200px;
 }
 
 #main-content {

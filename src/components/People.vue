@@ -18,6 +18,7 @@ li {
   margin-bottom: 2vh;
   border: 1px solid pink;
   padding: 15px 30px 15px 30px;
+  font-size: 20px;
 }
 .user_1,
 .user_2,
@@ -27,6 +28,7 @@ li {
   background-color: antiquewhite;
   transition: 1s;
   cursor: pointer;
+  border-radius: 10%;
 }
 .user_1:hover,
 .user_2:hover,
