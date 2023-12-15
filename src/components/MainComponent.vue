@@ -6,8 +6,6 @@
         <img style="border-radius: 30px" :src="image" alt="Slide" />
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
-      <div class="swiper-button-next" slot="button-next"></div>
-      <div class="swiper-button-prev" slot="button-prev"></div>
     </swiper>
 
     <!-- Основное содержимое -->
