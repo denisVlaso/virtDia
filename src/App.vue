@@ -4,16 +4,10 @@
     <MainComponent class="mC"></MainComponent>
     <div class="dialog">
       <div class="section">
-        <p>Контакты</p>
         <People></People>
       </div>
       <div class="section">
-        <p>Сообщения</p>
-        <Message></Message>
-      </div>
-      <div class="section">
-        <p>Новости</p>
-        <News></News>
+        <router-view />
       </div>
     </div>
     <div>

@@ -1,12 +1,13 @@
 <template>
+  <p>Контакты</p>
   <div class="dialog">
     <div class="users">
       <ul>
-        <li class="user_1">Вася</li>
-        <li class="user_2">Иван</li>
-        <li class="user_3">Вика</li>
-        <li class="user_4">Дима</li>
-        <li class="user_5">Олег</li>
+        <li @click="$router.push('/dialog')" class="user_1">Вася</li>
+        <li @click="$router.push('/dialog')" class="user_2">Иван</li>
+        <li @click="$router.push('/dialog')" class="user_3">Вика</li>
+        <li @click="$router.push('/dialog')" class="user_4">Дима</li>
+        <li @click="$router.push('/dialog')" class="user_5">Олег</li>
       </ul>
     </div>
   </div>

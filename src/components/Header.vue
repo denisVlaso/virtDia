@@ -1,5 +1,6 @@
 <template>
-  <div class="divHeader">
+  <div class="divHeader" @click="$router.push('/')">
+    <div class="Home">Главная</div>
     <ul class="ulHeader">
       <li class="liHeader" v-for="item in menuItems">
         {{ item.text }}
@@ -33,33 +34,13 @@ export default {
   display: grid;
   grid-template-columns: 1fr 12fr 1fr 1fr;
 }
-.registration {
-  padding: 15px;
-  background-color: cyan;
-  height: min-content;
-  grid-column: 3;
-}
-.login {
-  padding: 15px;
-  background-color: cyan;
-  height: min-content;
-  margin-left: auto;
-}
-.setting {
-  padding: 15px;
-  background-color: cyan;
-  height: min-content;
-}
 .divHeader {
   padding: 0 20px 0 20px;
-  display: grid;
-  height: 10vh;
-  width: max-width;
+  height: fit-content;
   align-items: center;
   background-color: deepskyblue;
-  display: grid;
-
-  grid-template-columns: 1fr 12fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
 }
 .ulHeader {
   list-style-type: none;
@@ -74,7 +55,13 @@ export default {
   cursor: pointer;
   background-color: cyan;
 }
-
+.Home {
+  padding: 15px;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+  background-color: cyan;
+  margin-bottom: 15px;
+}
 .liHeader:last-child {
   border-right: none;
 }

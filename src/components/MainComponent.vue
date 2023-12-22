@@ -3,16 +3,14 @@
     <!-- Карусель -->
     <swiper style="" :options="swiperOptions">
       <swiper-slide v-for="(image, index) in images" :key="index">
-        <img style="border-radius: 30px" :src="image" alt="Slide" />
+        <img
+          style="border-radius: 30px; background-repeat: no-repeat"
+          :src="image"
+          alt="Slide"
+        />
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
-
-    <!-- Основное содержимое -->
-    <div id="main-content">
-      <!-- Здесь будет основное содержимое вашего приложения -->
-      <router-view></router-view>
-    </div>
   </div>
 </template>
 
@@ -54,6 +52,7 @@ export default {
 #app111 {
   display: flex;
   width: 600px;
+  repeat: no-repeat;
   height: 200px;
 }
 

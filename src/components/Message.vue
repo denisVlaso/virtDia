@@ -1,4 +1,5 @@
 <template>
+  <p>Диалог</p>
   <div class="dialog_menu">
     <div class="messages">
       <div class="messagesInput" v-for="todo in todos">
